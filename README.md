@@ -1,4 +1,4 @@
-# Chapter 5 Functions
+# Exercises for Programmers
 
 To run tests:
 

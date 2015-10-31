@@ -1,5 +1,5 @@
 require 'spec_helper'
-require_relative '../anagram_checker'
+require_relative '../ch5_functions/anagram_checker'
 
 describe 'AnagramChecker' do
   let(:checker) { AnagramChecker.new }
