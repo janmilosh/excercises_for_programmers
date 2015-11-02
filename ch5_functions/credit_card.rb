@@ -50,14 +50,12 @@ class CreditCard
   end
 
   def get_validated_payment_input i, b
-    begin
-      @p = input_payment
-      @m = calculate_months_until_paid_off i, b, @p
-    rescue
-      puts 'Your payment isn\'t large enough, please try again.'
-      get_validated_payment_input i, b
-    end
+    @p = input_payment
+    @m = calculate_months_until_paid_off i, b, @p
     return @p, @m
+  rescue
+    puts 'Your payment isn\'t large enough, please try again.'
+    get_validated_payment_input i, b
   end
 
   def run

@@ -26,13 +26,18 @@ class PasswordChecker
   end
 
   def output password, strength
-    print "The password #{ password } is a "
-    print "#{ 'very weak' if strength < 2 }"
-    print "#{ 'weak' if (2..3).include? strength }"
-    print "#{ 'strong' if strength == 4 }"
-    puts "#{ 'very strong' if strength == 5 } password.\n\n"
-    puts '*' * 70
-    puts
+    print "The password #{ password } is a #{ strength_text strength } password.\n\n"
+  end
+
+  def strength_text strength
+    # print "#{ is_very }"
+    # print "#{ 'weak' if (2..3).include? strength }"
+    # print "#{ 'strong' if strength == 4 }"
+    # puts "#{ 'very strong' if strength == 5 } "
+    # puts '*' * 70
+    # do case statement
+    return 'very weak' if strength < 2
+    # return the words
   end
 
   def run
