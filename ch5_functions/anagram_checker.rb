@@ -1,6 +1,6 @@
 class AnagramChecker
   def is_anagram? word1, word2
-    if self.same_length? word1, word2
+    if same_length? word1, word2
       return true if evaluate word1, word2
     end
     false
@@ -15,11 +15,11 @@ class AnagramChecker
         temp.delete_at(index) if char1 == char2
       end
     end
-    self.array_length(temp) == 0
+    array_length(temp) == 0
   end
 
   def same_length? word1, word2
-    self.array_length(word1.split('')) == self.array_length(word2.split(''))
+    array_length(word1.split('')) == array_length(word2.split(''))
   end
 
   def array_length arr
@@ -31,9 +31,9 @@ class AnagramChecker
   def get_inputs
     puts 'Enter two strings and I\'ll tell you if they\'re anagrams:'
     print 'Enter the first string: '
-    word1 = gets.chomp
+    word1 = gets.chomp.downcase
     print 'Enter the second string: '
-    word2 = gets.chomp
+    word2 = gets.chomp.downcase
     return word1, word2
   end
 
