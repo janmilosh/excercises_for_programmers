@@ -25,19 +25,21 @@ class PasswordChecker
     gets.chomp
   end
 
-  def output password, strength
-    print "The password #{ password } is a #{ strength_text strength } password.\n\n"
+  def strength_text strength
+    case strength
+      when 1
+        'very weak'
+      when 2, 3
+        'weak'
+      when 4
+        'strong'
+      when 5
+        'very strong'
+    end
   end
 
-  def strength_text strength
-    # print "#{ is_very }"
-    # print "#{ 'weak' if (2..3).include? strength }"
-    # print "#{ 'strong' if strength == 4 }"
-    # puts "#{ 'very strong' if strength == 5 } "
-    # puts '*' * 70
-    # do case statement
-    return 'very weak' if strength < 2
-    # return the words
+  def output password, strength
+    print "The password #{ password } is a #{ strength_text strength } password.\n\n"
   end
 
   def run
