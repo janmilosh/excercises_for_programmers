@@ -27,14 +27,10 @@ class PasswordChecker
 
   def strength_text strength
     case strength
-      when 1
-        'very weak'
-      when 2, 3
-        'weak'
-      when 4
-        'strong'
-      when 5
-        'very strong'
+      when 1 then 'very weak'
+      when 2, 3 then 'weak'
+      when 4 then 'strong'
+      when 5 then 'very strong'
     end
   end
 
