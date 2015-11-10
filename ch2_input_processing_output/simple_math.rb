@@ -1,4 +1,9 @@
-class SimpleMath  
+class SimpleMath
+  attr_accessor :first, :second
+
+  def initialize
+  end
+    
   def get_numbers
     @first = prompt "\nWhat is the first number? "
     @second = prompt "What is the second number? "
@@ -22,13 +27,29 @@ class SimpleMath
     true  
   end
 
+  def add
+    @first + @second
+  end
+
+  def subtract
+    @first - @second
+  end
+
+  def multiply
+    @first * @second
+  end
+
+  def divide
+    (@first.to_f / @second).round
+  end
+
   def output
     @first = @first.to_i
     @second = @second.to_i
-    puts "#{ @first } + #{ @second } = #{ @first + @second }\n"\
-         "#{ @first } - #{ @second } = #{ @first - @second }\n"\
-         "#{ @first } * #{ @second } = #{ @first * @second }\n"\
-         "#{ @first } / #{ @second } = #{ (@first.to_f / @second).round }\n\n"
+    puts "#{ @first } + #{ @second } = #{ add }\n"\
+         "#{ @first } - #{ @second } = #{ subtract }\n"\
+         "#{ @first } * #{ @second } = #{ multiply }\n"\
+         "#{ @first } / #{ @second } = #{ divide }\n\n"
   end
 
   def run
