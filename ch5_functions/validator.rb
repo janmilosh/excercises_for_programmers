@@ -80,5 +80,7 @@ class Validate
   end
 end
 
-v = Validate.new
-v.run
+if ENV['TEST'] != 'true'
+  v = Validate.new
+  v.run
+end

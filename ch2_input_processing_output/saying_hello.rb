@@ -13,5 +13,7 @@ class Hello
   end
 end
 
-hello = Hello.new
-hello.run
+if ENV['TEST'] != 'true'
+  hello = Hello.new
+  hello.run
+end

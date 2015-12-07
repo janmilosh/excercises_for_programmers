@@ -52,5 +52,7 @@ class RetirementCalculator
   end
 end
 
-retire = RetirementCalculator.new
-retire.run
+if ENV['TEST'] != 'true'
+  retire = RetirementCalculator.new
+  retire.run
+end

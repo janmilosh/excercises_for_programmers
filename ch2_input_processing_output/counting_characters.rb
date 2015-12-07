@@ -18,5 +18,7 @@ class CountingCharacters
   end
 end
 
-c = CountingCharacters.new
-c.run
+if ENV['TEST'] != 'true'
+  c = CountingCharacters.new
+  c.run
+end

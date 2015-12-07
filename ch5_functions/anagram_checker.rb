@@ -44,5 +44,7 @@ class AnagramChecker
   end
 end
 
-checker = AnagramChecker.new
-checker.run
+if ENV['TEST'] != 'true'
+  checker = AnagramChecker.new
+  checker.run
+end

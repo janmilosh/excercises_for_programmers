@@ -15,5 +15,7 @@ class Quote
   end
 end
 
-q = Quote.new
-q.run
+if ENV['TEST'] != 'true'
+  q = Quote.new
+  q.run
+end

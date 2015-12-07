@@ -44,5 +44,7 @@ class RectangleArea
   end
 end
 
-area = RectangleArea.new
-area.run
+if ENV['TEST'] != 'true'
+  area = RectangleArea.new
+  area.run
+end

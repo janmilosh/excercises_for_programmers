@@ -58,5 +58,7 @@ class SimpleMath
   end
 end
 
-sm = SimpleMath.new
-sm.run
+if ENV['TEST'] != 'true'
+  sm = SimpleMath.new
+  sm.run
+end

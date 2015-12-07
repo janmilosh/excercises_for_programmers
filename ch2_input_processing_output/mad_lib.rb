@@ -22,5 +22,7 @@ class MadLib
   end
 end
 
-madlib = MadLib.new
-madlib.run
+if ENV['TEST'] != 'true'
+  madlib = MadLib.new
+  madlib.run
+end

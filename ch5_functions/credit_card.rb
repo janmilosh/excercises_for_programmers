@@ -53,5 +53,7 @@ class CreditCard
   end
 end
 
-cc = CreditCard.new
-cc.run
+if ENV['TEST'] != 'true'
+  cc = CreditCard.new
+  cc.run
+end

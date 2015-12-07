@@ -45,5 +45,7 @@ class PasswordChecker
   end
 end
 
-checker = PasswordChecker.new
-checker.run
+if ENV['TEST'] != 'true'
+  checker = PasswordChecker.new
+  checker.run
+end
