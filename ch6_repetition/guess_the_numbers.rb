@@ -76,13 +76,12 @@ class NumberGuesser
   end
 
   def get_level
-    print @message
+    print 'Pick a difficulty level (1, 2, or 3): '
     @level = gets.chomp
     get_level if !valid_level?
   end
 
   def start_game
-    @message = 'Pick a difficulty level (1, 2, or 3): '
     get_level
     set_number_to_guess
     @message = "I have my number. What's your guess (from #{ min } to #{ max })? "
