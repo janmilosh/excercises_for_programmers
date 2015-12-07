@@ -2,4 +2,4 @@
 
 To run tests:
 
-  $ bundle exec rspec
+  $ TEST=true bundle exec rspec spec

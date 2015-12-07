@@ -117,5 +117,7 @@ class NumberGuesser
   end
 end
 
-# game = NumberGuesser.new
-# game.run
+if ENV['TEST'] != 'true'
+  game = NumberGuesser.new
+  game.run
+end
