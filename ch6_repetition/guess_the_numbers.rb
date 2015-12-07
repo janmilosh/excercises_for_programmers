@@ -88,6 +88,7 @@ class NumberGuesser
   end
 
   def set_another_game
+    print 'Play again? '
     input = gets.chomp.downcase[0]
     if input == 'y'
       initialize
@@ -110,7 +111,6 @@ class NumberGuesser
         guess(gets.chomp)
       end
       puts @message
-      print 'Play again? '
       set_another_game
     end
   end
