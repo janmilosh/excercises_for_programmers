@@ -1,5 +1,4 @@
-require 'spec_helper'
-require_relative '../ch3_calculations/area'
+require_relative '../../ch3_calculations/area'
 
 describe 'RectangleArea' do 
   let(:area) { RectangleArea.new }

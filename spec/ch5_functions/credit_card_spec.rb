@@ -1,5 +1,4 @@
-require 'spec_helper'
-require_relative '../ch5_functions/credit_card'
+require_relative '../../ch5_functions/credit_card'
 
 describe 'CreditCard' do
   let(:credit_card) { CreditCard.new }

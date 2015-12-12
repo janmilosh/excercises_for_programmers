@@ -1,5 +1,4 @@
-require 'spec_helper'
-require_relative '../ch5_functions/password_strength_indicator'
+require_relative '../../ch5_functions/password_strength_indicator'
 
 describe 'PasswordChecker' do
   let(:checker) { PasswordChecker.new } 

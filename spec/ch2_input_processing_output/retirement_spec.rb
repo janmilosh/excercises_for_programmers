@@ -1,5 +1,4 @@
-require 'spec_helper'
-require_relative '../ch2_input_processing_output/retirement_calculator'
+require_relative '../../ch2_input_processing_output/retirement_calculator'
 
 describe 'RetirementCalculator' do
   let(:retirement) { RetirementCalculator.new }

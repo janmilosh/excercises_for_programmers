@@ -1,5 +1,4 @@
-require 'spec_helper'
-require_relative '../ch2_input_processing_output/simple_math'
+require_relative '../../ch2_input_processing_output/simple_math'
 
 describe 'SimpleMath' do
   let(:simple_math) { SimpleMath.new }
