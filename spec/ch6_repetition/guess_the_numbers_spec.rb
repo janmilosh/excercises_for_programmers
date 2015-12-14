@@ -1,6 +1,6 @@
 require_relative '../../ch6_repetition/guess_the_numbers'
 
-describe 'number guesser' do
+describe 'NumberGuesser' do
   let(:game) { NumberGuesser.new }
   
   it 'should have the right level choices' do
