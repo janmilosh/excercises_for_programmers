@@ -80,7 +80,7 @@ class Validate
   end
 end
 
-if ENV['TEST'] != 'true'
+if __FILE__ == $0
   v = Validate.new
   v.run
 end

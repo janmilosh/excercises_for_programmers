@@ -22,7 +22,7 @@ class MadLib
   end
 end
 
-if ENV['TEST'] != 'true'
+if __FILE__ == $0
   madlib = MadLib.new
   madlib.run
 end

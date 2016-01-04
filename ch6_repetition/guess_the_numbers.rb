@@ -116,7 +116,7 @@ class NumberGuesser
   end
 end
 
-if ENV['TEST'] != 'true'
+if __FILE__ == $0
   game = NumberGuesser.new
   game.run
 end

@@ -34,7 +34,7 @@ class InputOutput
   end
 end
 
-if ENV['TEST'] != 'true'
+if __FILE__ == $0
   ball = Magic8Ball.new
   game = Game.new(ball.num_messages)
   random_number = game.number

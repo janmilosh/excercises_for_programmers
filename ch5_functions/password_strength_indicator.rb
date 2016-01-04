@@ -45,7 +45,7 @@ class PasswordChecker
   end
 end
 
-if ENV['TEST'] != 'true'
+if __FILE__ == $0
   checker = PasswordChecker.new
   checker.run
 end

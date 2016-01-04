@@ -53,7 +53,7 @@ class CreditCard
   end
 end
 
-if ENV['TEST'] != 'true'
+if __FILE__ == $0
   cc = CreditCard.new
   cc.run
 end

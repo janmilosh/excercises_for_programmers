@@ -58,7 +58,7 @@ class SimpleMath
   end
 end
 
-if ENV['TEST'] != 'true'
+if __FILE__ == $0
   sm = SimpleMath.new
   sm.run
 end

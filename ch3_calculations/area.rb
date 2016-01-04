@@ -44,7 +44,7 @@ class RectangleArea
   end
 end
 
-if ENV['TEST'] != 'true'
+if __FILE__ == $0
   area = RectangleArea.new
   area.run
 end

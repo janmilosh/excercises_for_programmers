@@ -52,7 +52,7 @@ class RetirementCalculator
   end
 end
 
-if ENV['TEST'] != 'true'
+if __FILE__ == $0
   retire = RetirementCalculator.new
   retire.run
 end

@@ -15,7 +15,7 @@ class Quote
   end
 end
 
-if ENV['TEST'] != 'true'
+if __FILE__ == $0
   q = Quote.new
   q.run
 end
